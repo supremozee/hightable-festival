@@ -5,7 +5,7 @@ const HeroWrapper = styled.div`
   margin: 20px;
   width: 100%;
   height: 162px;
-  background-image: url(${({ bg }: {bg:any}) => bg || '/images/event_slide1.svg'});
+  background-image: url(${({ bg }) => bg || '/images/event_slide1.svg'});
   // background-repeat: no-repeat;
   background-position:center;
   object-fit: cover;
@@ -43,7 +43,7 @@ const Dot = styled.div`
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background-color: ${({ isActive }: {isActive: any}) => (isActive ? '#FF9916' : '#cccccc')};
+  background-color: ${({ isActive }) => (isActive ? '#FF9916' : '#cccccc')};
 `;
 
 const HeroSection = () => {
